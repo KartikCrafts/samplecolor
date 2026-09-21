@@ -1,0 +1,6 @@
+{
+  "name": "Elysian Beauty Parlor & Luxury Salon",
+  "description": "Premium beauty parlor & spa experience with dynamic color palettes from Pinterest inspiration and scroll-triggered animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

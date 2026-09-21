@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #fbf6f5;
+  --surface: #ffffff;
+  --surface-alt: #f6edea;
+  --primary: #d79893;
+  --primary-dark: #b86d67;
+  --primary-text: #ffffff;
+  --secondary: #13273c;
+  --secondary-text: #ffffff;
+  --accent: #c86132;
+  --accent-light: #fbeee8;
+  --text-main: #13202e;
+  --text-muted: #5e6b79;
+  --border: rgba(19, 39, 60, 0.12);
+  --border-strong: rgba(19, 39, 60, 0.22);
+  --ring: rgba(215, 152, 147, 0.4);
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg);
+  color: var(--text-main);
+  transition: background-color 0.55s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-x: hidden;
+}
+
+.font-serif-luxury {
+  font-family: var(--font-serif);
+}
+
+/* Smooth color transition on all themed surfaces */
+.theme-transition {
+  transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.3s ease;
+}
+
+/* Custom aesthetic scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 9999px;
+  border: 2px solid var(--bg);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
